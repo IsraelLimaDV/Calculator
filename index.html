@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="main_container">
+        <div id ="input" class="input"></div>
+        <div class="buttons">
+        <div class="operators">
+            <div onclick="addOperator('+')" class="number_op">+</div>
+            <div onclick="addNumber('-')" class="number_op">-</div>
+            <div onclick="addOperator('*')" class="number_op">x</div>
+            <div onclick="addOperator('/')" class="number_op">/</div>
+        </div>
+        <div class="panel">
+            <div class="numbers">
+                <div onclick="addNumber('7')" class="number">7</div>
+                <div onclick="addNumber('8')" class="number">8</div>
+                <div onclick="addNumber('9')" class="number">9</div>
+            </div>
+            <div class="numbers">
+                <div onclick="addNumber('4')" class="number">4</div>
+                <div onclick="addNumber('5')" class="number">5</div>
+                <div onclick="addNumber('6')" class="number">6</div>
+            </div>
+            <div class="numbers">
+                <div onclick="addNumber('1')" class="number">1</div>
+                <div onclick="addNumber('2')" class="number">2</div>
+                <div onclick="addNumber('3')" class="number">3</div>
+            </div>
+            <div class="numbers">
+                <div onclick="addNumber('0')" class="number">0</div>
+                <div onclick="addNumber('.')" id="dot" class="number">.</div>
+                <div onclick="clearInput()" id="clear">C</div>
+            </div>
+
+        </div>
+        <div class="result">
+            <div onclick="calcular()" id='equal'>=</div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
